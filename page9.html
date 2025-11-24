@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio - Page 9</title>
+  </head>
+
+  <body bgcolor="#f5f5dc" text="#222222">
+    <center>
+      <h1><font color="#003366">Contact Me</font></h1>
+
+      <hr width="80%" size="2" />
+
+      <font face="Georgia, 'Times New Roman', serif">
+        <p>
+          If you would like to get in touch, please fill out the form below with
+          your details.
+        </p>
+      </font>
+
+      <br />
+
+      <form action="page9.html" method="get">
+        <table cellpadding="6" cellspacing="4" width="40%">
+          <tr>
+            <td align="right">
+              <font face="Verdana, Arial, sans-serif">Name:</font>
+            </td>
+            <td align="left">
+              <input type="text" name="name" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="right">
+              <font face="Verdana, Arial, sans-serif">Phone Number:</font>
+            </td>
+            <td align="left">
+              <input
+                type="tel"
+                name="phone"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                title="Enter a 10-digit phone number"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="right">
+              <font face="Verdana, Arial, sans-serif">Email:</font>
+            </td>
+            <td align="left">
+              <input
+                type="email"
+                name="email"
+                title="Enter a valid email address"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="right">
+              <font face="Verdana, Arial, sans-serif">Password:</font>
+            </td>
+            <td align="left">
+              <input
+                type="password"
+                name="password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$])[A-Za-z0-9@#$]{8,}"
+                title="At least 8 characters with uppercase, lowercase, number and one of @ # $"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="right">
+              <font face="Verdana, Arial, sans-serif">Date:</font>
+            </td>
+            <td align="left">
+              <input type="date" name="date" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td align="left">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Clear" />
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <br />
+
+      <hr width="80%" size="2" />
+
+      <!-- Navigation Buttons -->
+      <p>
+        <a href="page8.html" target="_blank" style="text-decoration: none">
+          <button
+            style="
+              padding: 6px 14px;
+              font-size: 13px;
+              background-color: #003366;
+              color: white;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            &laquo; Previous
+          </button>
+        </a>
+
+        <a href="page10.html" target="_blank" style="text-decoration: none">
+          <button
+            style="
+              padding: 6px 14px;
+              font-size: 13px;
+              background-color: #003366;
+              color: white;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            Next &raquo;
+          </button>
+        </a>
+      </p>
+
+      <p>Page 9 of 10</p>
+    </center>
+  </body>
+</html>
