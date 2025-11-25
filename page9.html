@@ -22,69 +22,79 @@
 
       <form action="page9.html" method="get">
         <table cellpadding="6" cellspacing="4" width="40%">
+
+          <!-- Name -->
           <tr>
-            <td align="right">
-              <font face="Verdana, Arial, sans-serif">Name:</font>
-            </td>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Name:</font></td>
+            <td align="left"><input type="text" name="name" required /></td>
+          </tr>
+
+          <!-- Phone -->
+          <tr>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Phone Number:</font></td>
             <td align="left">
-              <input type="text" name="name" required />
+              <input type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required />
             </td>
           </tr>
 
+          <!-- Email -->
           <tr>
-            <td align="right">
-              <font face="Verdana, Arial, sans-serif">Phone Number:</font>
-            </td>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Email:</font></td>
             <td align="left">
-              <input
-                type="tel"
-                name="phone"
-                maxlength="10"
-                pattern="[0-9]{10}"
-                title="Enter a 10-digit phone number"
-                required
-              />
+              <input type="email" name="email" title="Enter a valid email address" required />
             </td>
           </tr>
 
+          <!-- Gender (added here) -->
           <tr>
-            <td align="right">
-              <font face="Verdana, Arial, sans-serif">Email:</font>
-            </td>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Gender:</font></td>
             <td align="left">
-              <input
-                type="email"
-                name="email"
-                title="Enter a valid email address"
-                required
-              />
+              <input type="radio" name="gender" value="Male" required /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Other" /> Other
             </td>
           </tr>
 
+          <!-- Languages (multiple choice) -->
           <tr>
-            <td align="right">
-              <font face="Verdana, Arial, sans-serif">Password:</font>
-            </td>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Languages:</font></td>
             <td align="left">
-              <input
-                type="password"
-                name="password"
+              <input type="checkbox" name="lang" value="English" /> English
+              <input type="checkbox" name="lang" value="Hindi" /> Hindi
+              <input type="checkbox" name="lang" value="Marathi" /> Marathi
+              <br />
+              <input type="checkbox" name="lang" value="Japanese" /> Japanese
+              <input type="checkbox" name="lang" value="German" /> German
+              <input type="checkbox" name="lang" value="Spanish" /> Spanish
+            </td>
+          </tr>
+
+          <!-- Password -->
+          <tr>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Password:</font></td>
+            <td align="left">
+              <input type="password" name="password"
                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$])[A-Za-z0-9@#$]{8,}"
                 title="At least 8 characters with uppercase, lowercase, number and one of @ # $"
-                required
-              />
+                required />
             </td>
           </tr>
 
+          <!-- Date -->
           <tr>
-            <td align="right">
-              <font face="Verdana, Arial, sans-serif">Date:</font>
-            </td>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Date:</font></td>
+            <td align="left"><input type="date" name="date" required /></td>
+          </tr>
+
+          <!-- Message Box -->
+          <tr>
+            <td align="right"><font face="Verdana, Arial, sans-serif">Message:</font></td>
             <td align="left">
-              <input type="date" name="date" required />
+              <textarea name="message" rows="4" cols="30" placeholder="Write your message here..."></textarea>
             </td>
           </tr>
 
+          <!-- Buttons -->
           <tr>
             <td></td>
             <td align="left">
@@ -103,30 +113,14 @@
       <p>
         <a href="page8.html" target="_blank" style="text-decoration: none">
           <button
-            style="
-              padding: 6px 14px;
-              font-size: 13px;
-              background-color: #003366;
-              color: white;
-              border: none;
-              border-radius: 5px;
-            "
-          >
+            style="padding: 6px 14px; font-size: 13px; background-color: #003366; color: white; border: none; border-radius: 5px;">
             &laquo; Previous
           </button>
         </a>
 
         <a href="page10.html" target="_blank" style="text-decoration: none">
           <button
-            style="
-              padding: 6px 14px;
-              font-size: 13px;
-              background-color: #003366;
-              color: white;
-              border: none;
-              border-radius: 5px;
-            "
-          >
+            style="padding: 6px 14px; font-size: 13px; background-color: #003366; color: white; border: none; border-radius: 5px;">
             Next &raquo;
           </button>
         </a>
